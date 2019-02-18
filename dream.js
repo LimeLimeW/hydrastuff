@@ -1,0 +1,11 @@
+osc(9,2,2)
+  .modulateKaleid(o1,1,1,0)
+  .repeat(1)
+  .out(o1)
+
+osc(2,1,2)
+  .color(0,0.1,0.5)
+  .modulatePixelate(o1,4)
+  .add(o1)
+  .out(o2)
+render(o2)
